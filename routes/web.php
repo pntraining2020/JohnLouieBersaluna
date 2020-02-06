@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('pnexam');
+// });
+Route::get('/','pnexamController@index');
+Route::post('/clockin','pnexamController@clockin');
